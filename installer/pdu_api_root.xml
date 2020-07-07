@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- D-PDU-API root file -->
+<MVCI_PDU_API_ROOT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\ProgramData\D-PDU API\xsd.xsd" MVCI_PART2_STANDARD_VERSION="2.2.0">
+	<MVCI_PDU_API>
+		<SHORT_NAME>EDIC_D_PDU_API_11_26_072</SHORT_NAME>
+		<DESCRIPTION>EDIC D-PDU API Implementation</DESCRIPTION>
+		<SUPPLIER_NAME>Softing AG</SUPPLIER_NAME>
+		<LIBRARY_FILE URI="file:/C:/Program Files (x86)/Softing/D-PDU API/11.26.072/vecom/PDUAPI_SoftingAG_11.26.072.dll"/>
+		<MODULE_DESCRIPTION_FILE URI="file:/C:/Program Files (x86)/Softing/D-PDU API/11.26.072/vecom/MDF_SoftingAG_EDIC-PDU-API_11.26.072.xml"/>
+		<CABLE_DESCRIPTION_FILE URI="file:/C:/Program Files (x86)/Softing/D-PDU API/11.26.072/vecom/CDF_SoftingAG_EDIC-PDU-API_11.26.072.xml"/>
+	</MVCI_PDU_API>
+  <MVCI_PDU_API>
+    <SHORT_NAME>XS_D_PDU_API_FOR_DTS_8_14_016</SHORT_NAME>
+    <DESCRIPTION>I+ME ACTIA GmbH, D-PDU API Installation for DTS</DESCRIPTION>
+    <SUPPLIER_NAME>I+ME ACTIA GmbH</SUPPLIER_NAME>
+    <LIBRARY_FILE URI="file://C:\Program Files (x86)\Softing\Diagnostic Tool Set 8\8.14\Interfaces\DCDI_DPduApi\eCOM_PDU_API\PDUAPI_I+ME_ACTIA_XS.dll"/>
+    <MODULE_DESCRIPTION_FILE URI="file://C:\Program Files (x86)\Softing\Diagnostic Tool Set 8\8.14\Interfaces\DCDI_DPduApi\eCOM_PDU_API\MDF_I+ME_ACTIA_XS.xml"/>
+    <CABLE_DESCRIPTION_FILE URI="file://C:\Program Files (x86)\Softing\Diagnostic Tool Set 8\8.14\Interfaces\DCDI_DPduApi\eCOM_PDU_API\CDF_I+ME_ACTIA_XS.xml"/>
+  </MVCI_PDU_API>
+
+  <MVCI_PDU_API>
+    <SHORT_NAME>GDPM_UNITY_FOR_DTS_8_14_016</SHORT_NAME>
+    <DESCRIPTION>Berner and Mattner Systemtechnik GmbH, D-PDU API Installation for DTS</DESCRIPTION>
+    <SUPPLIER_NAME>Berner and Mattner Systemtechnik GmbH</SUPPLIER_NAME>
+    <LIBRARY_FILE URI="file://C:\Program Files (x86)\Softing\Diagnostic Tool Set 8\8.14\Interfaces\DCDI_DPduApi\DoIP_PDU_API\BMGDPMUNITY.dll"/>
+    <MODULE_DESCRIPTION_FILE URI="file://C:\Program Files (x86)\Softing\Diagnostic Tool Set 8\8.14\Interfaces\DCDI_DPduApi\DoIP_PDU_API\MDF_BernerMattner_UNITY.XML"/>
+    <CABLE_DESCRIPTION_FILE URI="file://C:\Program Files (x86)\Softing\Diagnostic Tool Set 8\8.14\Interfaces\DCDI_DPduApi\DoIP_PDU_API\CDF_BernerMattner_UNITY.xml"/>
+  </MVCI_PDU_API>
+
+  <MVCI_PDU_API>
+    <SHORT_NAME>BOSCH_DS_D_PDU_API_FOR_DTS_8_14_016</SHORT_NAME>
+    <DESCRIPTION>Bosch Automotive Service Solutions, D-PDU API Installation for DTS</DESCRIPTION>
+    <SUPPLIER_NAME>Bosch Automotive Service Solutions</SUPPLIER_NAME>
+    <LIBRARY_FILE URI="file://C:\Program Files (x86)\Softing\Diagnostic Tool Set 8\8.14\Interfaces\DAG_ISO_DOIP\PDUAPI_Loader.dll"/>
+    <MODULE_DESCRIPTION_FILE URI="file://C:\Program Files (x86)\Softing\Diagnostic Tool Set 8\8.14\Interfaces\DAG_ISO_DOIP\MDF_Bosch.xml"/>
+    <CABLE_DESCRIPTION_FILE URI="file://C:\Program Files (x86)\Softing\Diagnostic Tool Set 8\8.14\Interfaces\DAG_ISO_DOIP\CDF_Bosch.xml"/>
+  </MVCI_PDU_API>
+
+  <MVCI_PDU_API>
+    <SHORT_NAME>MACCHINA_M2_PDU_API</SHORT_NAME>
+    <DESCRIPTION>Macchina M2 D-PDU API Implementation</DESCRIPTION>
+    <SUPPLIER_NAME>github.com/rnd-ash</SUPPLIER_NAME>
+    <LIBRARY_FILE URI="file://C:\Program Files (x86)\macchina\dpdu\driver.dll"/>
+    <MODULE_DESCRIPTION_FILE URI="file://C:\Program Files (x86)\macchina\dpdu\mdf_macchina_m2.xml"/>
+    <CABLE_DESCRIPTION_FILE URI="file://C:\Program Files (x86)\macchina\dpdu\cdf_macchina_m2.xml"/>
+  </MVCI_PDU_API>
+</MVCI_PDU_API_ROOT>

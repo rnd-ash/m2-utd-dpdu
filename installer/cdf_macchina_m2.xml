@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--  D-PDU-API module description file based on version V2.2.0 of D-PDU-API specification     -->
+<MVCI_CABLE_DESCRIPTION xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="pdu.xsd" FILE_VERSION="0.0.1" MVCI_PART2_STANDARD_VERSION="2.2.0">
+   <DESCRIPTION>Softing Cable Description File V1.00</DESCRIPTION>
+   <SUPPLIER_NAME>Softing AG</SUPPLIER_NAME>
+
+   <DLCTYPE EID="ID1">
+      <ID>1</ID>
+      <SHORT_NAME>ISO_15031_3</SHORT_NAME>
+      <DESCRIPTION>ISO 15031-3 / OBD / SAE J1962 Connector</DESCRIPTION>
+   </DLCTYPE>
+   <DLCTYPE EID="ID2">
+      <ID>2</ID>
+      <SHORT_NAME>SUB_D_9</SHORT_NAME>
+      <DESCRIPTION>9-pin Sub-D connector for CAN and Vector interfaces</DESCRIPTION>
+   </DLCTYPE>
+   <DLCTYPE EID="ID3">
+      <ID>3</ID>
+      <SHORT_NAME>CAN_DHSC</SHORT_NAME>
+      <DESCRIPTION>9-pin Sub-D connectors for EDICcard2 DHSC, HLSC and DLSC</DESCRIPTION>
+   </DLCTYPE>
+   <DLCTYPE EID="ID4">
+      <ID>4</ID>
+      <SHORT_NAME>CAN_KVS_HS</SHORT_NAME>
+      <DESCRIPTION>9-pin Sub-D connectors for Kvaser interface High-Speed CAN</DESCRIPTION>
+   </DLCTYPE>
+   <DLCTYPE EID="ID5">
+      <ID>5</ID>
+      <SHORT_NAME>OBD_EDICwlan</SHORT_NAME>
+      <DESCRIPTION>OBD connector for EDICwlan</DESCRIPTION>
+   </DLCTYPE>
+   <DLCTYPE EID="ID6">
+      <ID>6</ID>
+      <SHORT_NAME>RJ45</SHORT_NAME>
+      <DESCRIPTION>Ethernet Connector</DESCRIPTION>
+   </DLCTYPE>
+
+   <CABLE>
+      <ID>100</ID>
+      <SHORT_NAME>KAB07_ED25_J1962</SHORT_NAME>
+      <DESCRIPTION>Cable for EDICpci and EDICusb to CARB plug (SAE J1962 / ISO 15031-3, length 3m)</DESCRIPTION>
+      <CABLE_IDENTIFICATION>
+         <CABLE_ID>100</CABLE_ID>
+      </CABLE_IDENTIFICATION>
+      <MAPPING>
+         <!-- CAN1-H -->
+         <PIN_ON_DLC>6</PIN_ON_DLC>
+         <PIN_ON_MODULE>14</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- CAN1-L -->
+         <PIN_ON_DLC>14</PIN_ON_DLC>
+         <PIN_ON_MODULE>1</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- CAN2-H -->
+         <PIN_ON_DLC>8</PIN_ON_DLC>
+         <PIN_ON_MODULE>3</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- CAN2-L -->
+         <PIN_ON_DLC>9</PIN_ON_DLC>
+         <PIN_ON_MODULE>16</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  L Line -->
+         <PIN_ON_DLC>15</PIN_ON_DLC>
+         <PIN_ON_MODULE>5</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  K Line -->
+         <PIN_ON_DLC>7</PIN_ON_DLC>
+         <PIN_ON_MODULE>6</PIN_ON_MODULE>
+      </MAPPING>
+      <DLCTYPE IDREF="ID1"/>
+   </CABLE>
+   <CABLE>
+      <ID>101</ID>
+      <SHORT_NAME>KAB06_ED25_J1962</SHORT_NAME>
+      <DESCRIPTION>Cable for EDICnet to CARB plug (SAE J1962 / ISO 15031-3, length 0,8m)</DESCRIPTION>
+      <CABLE_IDENTIFICATION>
+         <CABLE_ID>101</CABLE_ID>
+      </CABLE_IDENTIFICATION>
+      <MAPPING>
+         <!--  CAN-H -->
+         <PIN_ON_DLC>6</PIN_ON_DLC>
+         <PIN_ON_MODULE>14</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  CAN-L -->
+         <PIN_ON_DLC>14</PIN_ON_DLC>
+         <PIN_ON_MODULE>1</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- CAN2-H -->
+         <PIN_ON_DLC>8</PIN_ON_DLC>
+         <PIN_ON_MODULE>3</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- CAN2-L -->
+         <PIN_ON_DLC>9</PIN_ON_DLC>
+         <PIN_ON_MODULE>16</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  L-Line -->
+         <PIN_ON_DLC>15</PIN_ON_DLC>
+         <PIN_ON_MODULE>5</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  K-Line -->
+         <PIN_ON_DLC>7</PIN_ON_DLC>
+         <PIN_ON_MODULE>6</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  J1850+ -->
+         <PIN_ON_DLC>2</PIN_ON_DLC>
+         <PIN_ON_MODULE>15</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  J1850- -->
+         <PIN_ON_DLC>10</PIN_ON_DLC>
+         <PIN_ON_MODULE>2</PIN_ON_MODULE>
+      </MAPPING>
+      <DLCTYPE IDREF="ID1"/>
+   </CABLE>
+   <CABLE>
+      <ID>102</ID>
+      <SHORT_NAME>KAB01_ED15_J1962</SHORT_NAME>
+      <DESCRIPTION>Cable for EDIC-FZIF-C1(2) to CARB plug (SAE J1962 / ISO 15031-3, length 3m)</DESCRIPTION>
+      <CABLE_IDENTIFICATION>
+         <CABLE_ID>102</CABLE_ID>
+      </CABLE_IDENTIFICATION>
+      <MAPPING>
+         <!--  CAN-H -->
+         <PIN_ON_DLC>6</PIN_ON_DLC>
+         <PIN_ON_MODULE>7</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  CAN-L -->
+         <PIN_ON_DLC>14</PIN_ON_DLC>
+         <PIN_ON_MODULE>8</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  CAN-H -->
+         <PIN_ON_DLC>9</PIN_ON_DLC>
+         <PIN_ON_MODULE>9</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  CAN-L -->
+         <PIN_ON_DLC>10</PIN_ON_DLC>
+         <PIN_ON_MODULE>10</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  L-Line -->
+         <PIN_ON_DLC>15</PIN_ON_DLC>
+         <PIN_ON_MODULE>13</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  K-Line -->
+         <PIN_ON_DLC>7</PIN_ON_DLC>
+         <PIN_ON_MODULE>14</PIN_ON_MODULE>
+      </MAPPING>
+      <DLCTYPE IDREF="ID1"/>
+   </CABLE>
+   <CABLE>
+      <ID>103</ID>
+      <SHORT_NAME>KAB02_ED15_J1962</SHORT_NAME>
+      <DESCRIPTION>Cable for EDIC-FZIF-C1(2) to CARB plug (SAE J1962 / ISO 15031-3 (matching for BMW), length 3m)</DESCRIPTION>
+      <CABLE_IDENTIFICATION>
+         <CABLE_ID>103</CABLE_ID>
+      </CABLE_IDENTIFICATION>
+      <MAPPING>
+         <!--  CAN-H -->
+         <PIN_ON_DLC>6</PIN_ON_DLC>
+         <PIN_ON_MODULE>7</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  CAN-L -->
+         <PIN_ON_DLC>14</PIN_ON_DLC>
+         <PIN_ON_MODULE>8</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  L-Line -->
+         <PIN_ON_DLC>15</PIN_ON_DLC>
+         <PIN_ON_MODULE>13</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  K-Line -->
+         <PIN_ON_DLC>7</PIN_ON_DLC>
+         <PIN_ON_MODULE>14</PIN_ON_MODULE>
+      </MAPPING>
+      <DLCTYPE IDREF="ID1"/>
+   </CABLE>
+   <CABLE>
+      <ID>104</ID>
+      <SHORT_NAME>J1962_CARB</SHORT_NAME>
+      <DESCRIPTION>Cable with 1:1 connection for EDICblue, VAS5054 and J2534-Interfaces with CARB plug (SAE J1962 / ISO 15031-3)</DESCRIPTION>
+      <CABLE_IDENTIFICATION>
+         <CABLE_ID>104</CABLE_ID>
+      </CABLE_IDENTIFICATION>
+      <MAPPING>
+         <!--  CAN-H -->
+         <PIN_ON_DLC>6</PIN_ON_DLC>
+         <PIN_ON_MODULE>6</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  CAN-L -->
+         <PIN_ON_DLC>14</PIN_ON_DLC>
+         <PIN_ON_MODULE>14</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  CAN-H LS -->
+         <PIN_ON_DLC>8</PIN_ON_DLC>
+         <PIN_ON_MODULE>8</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  CAN-L LS -->
+         <PIN_ON_DLC>9</PIN_ON_DLC>
+         <PIN_ON_MODULE>9</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  L-Line -->
+         <PIN_ON_DLC>15</PIN_ON_DLC>
+         <PIN_ON_MODULE>15</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  K-Line -->
+         <PIN_ON_DLC>7</PIN_ON_DLC>
+         <PIN_ON_MODULE>7</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  CAN2-H for Cummins/Inline7 -->
+         <PIN_ON_DLC>3</PIN_ON_DLC>
+         <PIN_ON_MODULE>3</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  CAN2-L for Cummins/Inline7-->
+         <PIN_ON_DLC>11</PIN_ON_DLC>
+         <PIN_ON_MODULE>11</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  CAN3-H for Cummins/Inline7-->
+         <PIN_ON_DLC>12</PIN_ON_DLC>
+         <PIN_ON_MODULE>12</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  CAN3-L for Cummins/Inline7 -->
+         <PIN_ON_DLC>13</PIN_ON_DLC>
+         <PIN_ON_MODULE>13</PIN_ON_MODULE>
+      </MAPPING>
+
+      <DLCTYPE IDREF="ID1"/>
+   </CABLE>
+   <CABLE>
+      <ID>105</ID>
+      <SHORT_NAME>KAB09_IF09</SHORT_NAME>
+      <DESCRIPTION>Cable for 9-pin Sub-D IF-Connectors (1:1 connection, Vector Interfaces, CAN Interfaces)</DESCRIPTION>
+      <CABLE_IDENTIFICATION>
+         <CABLE_ID>105</CABLE_ID>
+      </CABLE_IDENTIFICATION>
+      <MAPPING>
+         <!-- First CAN-H -->
+         <PIN_ON_DLC>1</PIN_ON_DLC>
+         <PIN_ON_MODULE>17</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- First CAN-L -->
+         <PIN_ON_DLC>2</PIN_ON_DLC>
+         <PIN_ON_MODULE>12</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- Second CAN-H -->
+         <PIN_ON_DLC>3</PIN_ON_DLC>
+         <PIN_ON_MODULE>27</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- Second CAN-L -->
+         <PIN_ON_DLC>4</PIN_ON_DLC>
+         <PIN_ON_MODULE>22</PIN_ON_MODULE>
+      </MAPPING>
+      <DLCTYPE IDREF="ID2"/>
+   </CABLE>
+   <CABLE>
+      <ID>106</ID>
+      <SHORT_NAME>KAB09_EDICC2</SHORT_NAME>
+      <DESCRIPTION>Cable for EDICcard2 9-pin Sub-D IF-Connectors (DHSC, DLSC, HLSC)</DESCRIPTION>
+      <CABLE_IDENTIFICATION>
+         <CABLE_ID>106</CABLE_ID>
+      </CABLE_IDENTIFICATION>
+      <MAPPING>
+         <!-- First CAN-H -->
+         <PIN_ON_DLC>1</PIN_ON_DLC>
+         <PIN_ON_MODULE>1</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- First CAN-L -->
+         <PIN_ON_DLC>2</PIN_ON_DLC>
+         <PIN_ON_MODULE>2</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- Second CAN-H -->
+         <PIN_ON_DLC>3</PIN_ON_DLC>
+         <PIN_ON_MODULE>3</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- Second CAN-L -->
+         <PIN_ON_DLC>4</PIN_ON_DLC>
+         <PIN_ON_MODULE>4</PIN_ON_MODULE>
+      </MAPPING>
+      <DLCTYPE IDREF="ID3"/>
+   </CABLE>
+   <CABLE>
+      <ID>107</ID>
+      <SHORT_NAME>KAB_KVASER</SHORT_NAME>
+      <DESCRIPTION>Cable for Kvaser interfaces 9-pin Sub-D.</DESCRIPTION>
+      <CABLE_IDENTIFICATION>
+         <CABLE_ID>107</CABLE_ID>
+      </CABLE_IDENTIFICATION>
+      <MAPPING>
+         <!-- First CAN-H -->
+         <PIN_ON_DLC>7</PIN_ON_DLC>
+         <PIN_ON_MODULE>11</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- First CAN-L -->
+         <PIN_ON_DLC>2</PIN_ON_DLC>
+         <PIN_ON_MODULE>12</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- Second CAN-H -->
+         <PIN_ON_DLC>17</PIN_ON_DLC>
+         <PIN_ON_MODULE>21</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- Second CAN-L -->
+         <PIN_ON_DLC>12</PIN_ON_DLC>
+         <PIN_ON_MODULE>22</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- Third CAN-H -->
+         <PIN_ON_DLC>27</PIN_ON_DLC>
+         <PIN_ON_MODULE>31</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- Third CAN-L -->
+         <PIN_ON_DLC>22</PIN_ON_DLC>
+         <PIN_ON_MODULE>32</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- Fourth CAN-H -->
+         <PIN_ON_DLC>37</PIN_ON_DLC>
+         <PIN_ON_MODULE>41</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- Fourth CAN-L -->
+         <PIN_ON_DLC>32</PIN_ON_DLC>
+         <PIN_ON_MODULE>42</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- Fifth CAN-H -->
+         <PIN_ON_DLC>47</PIN_ON_DLC>
+         <PIN_ON_MODULE>51</PIN_ON_MODULE>
+      </MAPPING>      <MAPPING>
+         <!-- Fifth CAN-L -->
+         <PIN_ON_DLC>42</PIN_ON_DLC>
+         <PIN_ON_MODULE>52</PIN_ON_MODULE>
+      </MAPPING>
+      <DLCTYPE IDREF="ID4"/>
+   </CABLE>
+   <CABLE>
+      <ID>108</ID>
+      <SHORT_NAME>KAB_EDICwlan_OBD</SHORT_NAME>
+      <DESCRIPTION>OBD Cable for EDICwlan</DESCRIPTION>
+      <CABLE_IDENTIFICATION>
+         <CABLE_ID>108</CABLE_ID>
+      </CABLE_IDENTIFICATION>
+      <MAPPING>
+         <!-- CAN1-H -->
+         <PIN_ON_DLC>6</PIN_ON_DLC>
+         <PIN_ON_MODULE>26</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- CAN1-L -->
+         <PIN_ON_DLC>14</PIN_ON_DLC>
+         <PIN_ON_MODULE>21</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- CAN2-H -->
+         <PIN_ON_DLC>8</PIN_ON_DLC>
+         <PIN_ON_MODULE>17</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- CAN2-L -->
+         <PIN_ON_DLC>9</PIN_ON_DLC>
+         <PIN_ON_MODULE>18</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  L Line -->
+         <PIN_ON_DLC>15</PIN_ON_DLC>
+         <PIN_ON_MODULE>4</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!--  K Line -->
+         <PIN_ON_DLC>7</PIN_ON_DLC>
+         <PIN_ON_MODULE>3</PIN_ON_MODULE>
+      </MAPPING>
+      <DLCTYPE IDREF="ID5"/>
+   </CABLE>
+   <CABLE>
+      <ID>109</ID>
+      <SHORT_NAME>Ethernet_Cable</SHORT_NAME>
+      <DESCRIPTION>Ethernet cable for DoIP</DESCRIPTION>
+      <CABLE_IDENTIFICATION>
+         <CABLE_ID>109</CABLE_ID>
+      </CABLE_IDENTIFICATION>
+      <MAPPING>
+         <!-- TX_minus -->
+         <PIN_ON_DLC>1</PIN_ON_DLC>
+         <PIN_ON_MODULE>31</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- TX_plus -->
+         <PIN_ON_DLC>2</PIN_ON_DLC>
+         <PIN_ON_MODULE>32</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- RX_plus -->
+         <PIN_ON_DLC>3</PIN_ON_DLC>
+         <PIN_ON_MODULE>33</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- RX_minus -->
+         <PIN_ON_DLC>6</PIN_ON_DLC>
+         <PIN_ON_MODULE>36</PIN_ON_MODULE>
+      </MAPPING>
+      <DLCTYPE IDREF="ID6"/>
+   </CABLE>
+   <CABLE>
+      <ID>110</ID>
+      <SHORT_NAME>KAB_KVASER_OBDII</SHORT_NAME>
+      <DESCRIPTION>Cable for Kvaser interfaces OBDII</DESCRIPTION>
+      <CABLE_IDENTIFICATION>
+         <CABLE_ID>110</CABLE_ID>
+      </CABLE_IDENTIFICATION>
+      <MAPPING>
+         <!-- First CAN-H -->
+         <PIN_ON_DLC>6</PIN_ON_DLC>
+         <PIN_ON_MODULE>11</PIN_ON_MODULE>
+      </MAPPING>
+      <MAPPING>
+         <!-- First CAN-L -->
+         <PIN_ON_DLC>14</PIN_ON_DLC>
+         <PIN_ON_MODULE>12</PIN_ON_MODULE>
+      </MAPPING>
+      <DLCTYPE IDREF="ID1"/>
+   </CABLE>
+</MVCI_CABLE_DESCRIPTION>

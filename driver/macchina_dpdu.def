@@ -1,0 +1,29 @@
+LIBRARY
+EXPORTS
+	PDUCancelComPrimitive @1
+	PDUConnect @2
+	PDUConstruct @3
+	PDUCreateComLogicalLink @4
+	PDUDestroyComLogicalLink @5
+	PDUDestroyItem @6
+	PDUDestruct @7
+	PDUDisconnect @8
+	PDUGetComParam @9
+	PDUGetConflictingResources @10
+	PDUGetEventItem @11
+	PDUGetLastError @12
+	PDUGetModuleIds @13
+	PDUGetObjectId @14
+	PDUGetResourceStatus @15
+	PDUGetStatus @17
+	PDUGetTimestamp @18
+	PDUGetUniqueRespIdTable @19
+	PDUGetVersion @20
+	PDUIoCtl @21
+	PDULockResource @22
+	PDUModuleConnect @23
+	PDUModuleDisconnect @24
+	PDURegisterEventCallback @25
+	PDUSetUniqueRespIdTable @26
+	PDUStartComPrimitive @27
+	PDUUnlockResource @28
