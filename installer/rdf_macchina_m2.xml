@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--D-PDU-API root file, created at 07.07.2020 16:12-->
+<MVCI_PDU_API_ROOT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" MVCI_PART2_STANDARD_VERSION="2.1.1" xsi:noNamespaceSchemaLocation="pdu.xsd">
+  <MVCI_PDU_API>
+    <SHORT_NAME>MACCHINA_M2_PDU_API</SHORT_NAME>
+    <DESCRIPTION>D-PDU-API implementation used by Macchina M2 under the dash</DESCRIPTION>
+    <SUPPLIER_NAME>github.com/rnd-ash</SUPPLIER_NAME>
+    <LIBRARY_FILE URI="file://C:/Program Files (x86)/macchina/dpdu/driver.dll"/>
+    <MODULE_DESCRIPTION_FILE URI="file:///C:/Program Files (x86)/macchina/dpdu/mdf_macchina_m2.xml"/>
+    <CABLE_DESCRIPTION_FILE URI="file:///C:/Program Files (x86)/macchina/dpdu/cdf_macchina_m2.xml"/>
+  </MVCI_PDU_API>
+  <!--specify further D-PDU-API installations here...-->
+</MVCI_PDU_API_ROOT>
