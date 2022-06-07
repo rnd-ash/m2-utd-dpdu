@@ -31,7 +31,7 @@ T_PDU_ERROR PDUGetVersion(UNUM32 hMod, PDU_VERSION_DATA* pVersionData);
 T_PDU_ERROR PDUGetStatus(UNUM32 hMod, UNUM32 hCLL, UNUM32 hCoP, T_PDU_STATUS* pStatusCode, UNUM32* pTimestamp, UNUM32* pExtraInfo);
 T_PDU_ERROR PDUGetLastError(UNUM32 hMod, UNUM32 hCLL, T_PDU_ERR_EVT* pErrorCode, UNUM32* phCoP, UNUM32* pTimestamp, UNUM32* pExtraErrorInfo);
 T_PDU_ERROR PDUGetResourceStatus(PDU_RSC_STATUS_ITEM* pResourceStatus);
-T_PDU_ERROR PDUCreateComLogicalLink(UNUM32 hMod, PDU_RSC_DATA* pRscData, UNUM32 resourceId, void* pCllTag, UNUM32* phCLL, PDU_FLAG_DATA* CllCreateFlag);
+T_PDU_ERROR PDUCreateComLogicalLink(UNUM32 hMod, PDU_RSC_DATA* pRscData, UNUM32 resourceId, void* pCllTag, UNUM32* phCLL, PDU_FLAG_DATA* pCllCreateFlag);
 T_PDU_ERROR PDUDestroyComLogicalLink(UNUM32 hMod, UNUM32 hCLL);
 T_PDU_ERROR PDUConnect(UNUM32 hMod, UNUM32 hCLL);
 T_PDU_ERROR PDUDisconnect(UNUM32 hMod, UNUM32 hCLL);
